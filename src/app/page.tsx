@@ -34,7 +34,7 @@ export default function Home() {
 
           {/* Description */}
           <p className="text-lg text-black/80 mb-16 max-w-2xl mx-auto leading-relaxed">
-            We're crafting premium plant-based protein and health supplements designed to fuel your wellness journey. Experience the genius of nature's nutrition, scientifically optimized for peak performance.
+            We&apos;re crafting premium plant-based protein and health supplements designed to fuel your wellness journey. Experience the genius of nature&apos;s nutrition, scientifically optimized for peak performance.
           </p>
 
           {/* Email Signup */}
@@ -100,7 +100,7 @@ export default function Home() {
         {/* Footer */}
         <div className="mt-16 text-center">
           <p className="text-black/60 text-sm">
-            © 2025 PlantGenius. Fueling your wellness with nature's genius.
+            © 2025 PlantGenius. Fueling your wellness with nature&apos;s genius.
           </p>
         </div>
       </div>

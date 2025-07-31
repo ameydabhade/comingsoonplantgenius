@@ -16,7 +16,15 @@ export const metadata: Metadata = {
   title: "PlantGenius - Coming Soon",
   description: "Premium plant-based protein and health supplements coming soon. Experience the genius of nature's nutrition.",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      {
+        url: "/favicon.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+    ],
+    apple: "/favicon.png",
+    shortcut: "/favicon.png",
   },
 };
 
