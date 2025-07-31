@@ -2,102 +2,108 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-white">
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 py-12">
+        {/* Main Content */}
+        <div className="text-center max-w-4xl mx-auto">
+          {/* PlantGenius Logo */}
+          <div className="mb-8">
+            <div className="flex justify-center mb-4">
+              <Image
+                src="/logo.png"
+                alt="PlantGenius Logo"
+                width={120}
+                height={120}
+                priority
+                className="drop-shadow-lg rounded-[20px]"
+              />
+            </div>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+          {/* Tagline */}
+          <p className="text-xl md:text-2xl text-black mb-8 font-light">
+            Premium Plant-Based Protein & Health Supplements
+          </p>
+
+          {/* Coming Soon Badge */}
+          <div className="inline-flex items-center px-6 py-3 bg-[#95CD84]/20 rounded-full text-[#22748D] font-semibold text-lg mb-12 shadow-md">
+            <div className="w-2 h-2 bg-[#95CD84] rounded-full mr-3 animate-pulse"></div>
+            Coming Soon
+          </div>
+
+          {/* Description */}
+          <p className="text-lg text-black/80 mb-16 max-w-2xl mx-auto leading-relaxed">
+            We're crafting premium plant-based protein and health supplements designed to fuel your wellness journey. Experience the genius of nature's nutrition, scientifically optimized for peak performance.
+          </p>
+
+          {/* Email Signup */}
+          <div className="max-w-md mx-auto mb-16">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <input
+                type="email"
+                placeholder="Enter your email for updates"
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#95CD84] focus:border-transparent"
+              />
+              <button className="px-6 py-3 bg-[#22748D] hover:bg-[#22748D]/90 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg">
+                Notify Me
+              </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Contact Information */}
+        <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-[#95CD84]/30 max-w-md mx-auto">
+          <h3 className="text-lg font-semibold text-[#22748D] mb-4 flex items-center">
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Contact Information
+          </h3>
+          
+          {/* Address */}
+          <div className="mb-6">
+            <h4 className="text-sm font-semibold text-[#22748D] mb-2">Address</h4>
+            <address className="text-black/80 not-italic leading-relaxed text-sm">
+              <div className="space-y-1">
+                <div>A-0801, Saanvi Nirman Celesta</div>
+                <div>Nr.Green City, B/H Sharandip Mensans</div>
+                <div>Ghuma Talav Road, Ghuma</div>
+                <div>Ahmedabad 380058</div>
+                <div>Gujarat, India</div>
+              </div>
+            </address>
+          </div>
+
+          {/* Contact Details */}
+          <div className="space-y-3">
+            <div className="flex items-center">
+              <svg className="w-4 h-4 mr-3 text-[#95CD84]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:info@plantgenius.in" className="text-black/80 hover:text-[#22748D] transition-colors text-sm">
+                info@plantgenius.in
+              </a>
+            </div>
+            <div className="flex items-center">
+              <svg className="w-4 h-4 mr-3 text-[#95CD84]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <a href="tel:+917698844134" className="text-black/80 hover:text-[#22748D] transition-colors text-sm">
+                +91 76988 44134
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="mt-16 text-center">
+          <p className="text-black/60 text-sm">
+            © 2025 PlantGenius. Fueling your wellness with nature's genius.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
